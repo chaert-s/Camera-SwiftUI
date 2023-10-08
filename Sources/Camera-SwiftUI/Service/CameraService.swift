@@ -477,6 +477,16 @@ public class CameraService: NSObject, Identifiable {
         }
     }
     
+    //    MARK: Returns current format horizontal angle of view
+    
+    /// - Tag: Returns current format horizontal angle of view
+    public func angleOfView()->Float{
+        let device = self.videoDeviceInput.device
+        let angleOfView = device.activeFormat.videoFieldOfView
+        return angleOfView
+    }
+    
+    
     //    MARK: Capture Photo
     
     /// - Tag: CapturePhoto
