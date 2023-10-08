@@ -30,3 +30,5 @@ License
 
 MIT
 
+# Changes made
+- Exposed multiple AVCaptureDevice properties for better usability
